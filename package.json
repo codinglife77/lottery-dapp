@@ -1,0 +1,25 @@
+{
+  "name": "lottery",
+  "version": "1.0.0",
+  "description": "remixd -s . --remix-ide https://remix.ethereum.org",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codinglife77/lottery-dapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codinglife77/lottery-dapp/issues"
+  },
+  "homepage": "https://github.com/codinglife77/lottery-dapp#readme",
+  "devDependencies": {
+    "chai": "^4.3.6"
+  }
+}
