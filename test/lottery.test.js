@@ -23,7 +23,7 @@ contract("Lottery", function ([deployer, user1, user2]) {
       );
       // transaction object {chainId, value, to, from, gas(Limit), gasPrice}
     });
-    it.only("should put the bet to the bet queue with 1 bet", async () => {
+    it("should put the bet to the bet queue with 1 bet", async () => {
       // bet
       let receipt = await lottery.bet("0xab", {
         from: user1,
@@ -59,7 +59,7 @@ contract("Lottery", function ([deployer, user1, user2]) {
 
   describe("Distribute", function () {
     describe("When the answer is checkable", function () {
-      it("should give the user the pot when the answer matches", async () => {
+      it.only("should give the user the pot when the answer matches", async () => {
         // 두 글자 다 맞았을 때
         await lottery.setAnswerForTest(
           "0xabec17438e4f0afb9cc8b77ce84bb7fd501497cfa9a1695095247daa5b4b7bcc",
